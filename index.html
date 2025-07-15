@@ -1,0 +1,648 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+
+    <link href="https://fonts.googleapis.com/css2?family=Aldrich&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+
+
+
+
+    <style>
+        body{margin: 0px;}
+        body h1{
+            
+  font-family: 'Oswald', sans-serif;
+
+
+}
+
+        
+        body p {
+            font-size: 17px;
+        }
+
+        .navbar {
+            background-color: white;
+            color: black;
+        }
+
+        #img {
+            height: 50px;
+
+        }
+
+        .sec1 {
+            background-image: url("NB-3811_Comp_A_Overall_BTS_Desktop.jpg");
+
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            aspect-ratio: 16 / 7;
+            display: flex;
+            align-items: center;
+
+        }
+
+        .sec1 p {
+            margin: 4px;
+        }
+
+        .head {
+            margin-left: 40px;
+            color: black;
+
+        }
+
+        #btn1 {
+            padding: 10px;
+            border-radius: 5px;
+            border: none;
+            background-color: rgb(249, 23, 23);
+            color: white;
+            transition: ease 0.3s;
+            margin-top: 10px;
+        }
+
+        #btn2 {
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid rgb(249, 23, 23);
+            background-color: white;
+            color: rgb(249, 23, 23);
+            transition: ease 0.2s;
+            margin-top: 10px;
+        }
+
+        #btn2:hover {
+            border: 4px solid rgb(249, 23, 23);
+        }
+
+        #btn1:hover {
+            background-color: rgb(169, 12, 12);
+        }
+
+     
+
+        .head1 {
+            display: none;
+        }
+
+        @media (max-width: 576px) {
+            #img {
+                height: 35px;
+
+            }
+
+            .sec1 {
+                aspect-ratio: 16/9;
+            }
+
+            .head1 {
+                display: block;
+            }
+
+            .head {
+                display: none;
+            }
+
+            #btn2 {
+                padding: 3px;
+            }
+
+            #btn1 {
+                padding: 3px;
+            }
+
+            .head1 h1 {
+                font-size: 25px;
+            }
+
+            .head1 p {
+                margin: 0px;
+            }
+
+
+
+            .head1 {
+                padding: 10px;
+            }
+        }
+
+        @media (max-width: 1180px) {
+            .head1 {
+                display: block;
+                padding: 20px;
+            }
+
+            .head {
+                display: none;
+            }
+        }
+
+        .image img {
+            width: 100%;
+            max-width: 600px;
+
+            object-fit: cover;
+            object-position: center;
+
+        }
+
+        .image {
+
+
+            text-align: center;
+        }
+
+        .heading {
+            text-align: center;
+            padding: 30px;
+
+        }
+
+        .hero {
+            padding: 0px;
+            background-color: #f2f2f2;
+        }
+
+        .heading p {
+            margin: 5px;
+        }
+
+        .btn {
+            margin-top: 10px;
+            background-color: #000000;
+            color: #ffffff;
+            border-radius: 5px;
+            border: none;
+            padding: 10px;
+            transition: ease 0.3s;
+        }
+
+        .btn:hover {
+            background-color: rgb(52, 51, 51);
+            color: white;
+        }
+
+        #btn {
+            margin-top: 10px;
+            background-color: #000000;
+            color: #ffffff;
+            border-radius: 5px;
+            border: none;
+            padding: 10px;
+            transition: ease 0.3s;
+        }
+
+        #btn:hover {
+            background-color: rgb(52, 51, 51);
+            color: white;
+        }
+
+
+        .icon {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+        }
+
+        .icon I {
+            font-size: 35px;
+        }
+
+        .features h1 {
+            color: #212529;
+        }
+
+        .features p {
+            color: #6c757d;
+        }
+
+        .features {
+            padding: 20px;
+            text-align: center
+        }
+
+        .features .row {
+            padding: 25px;
+        }
+
+        .col {
+            background-color: #e5eef7c3;
+            border: 3px solid white;
+            padding: 45px;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .review {
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            gap: 11px;
+        }
+
+        .review i {
+            font-size: 30px;
+        }
+
+        .review p {
+            margin: 5px;
+            font-size: 20px;
+        }
+
+        .col1 {
+            background-color: #e5eef7c3;
+            border: 5px solid white;
+            padding: 40px;
+            text-align: left;
+        }
+
+        .coustomer {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .coustomer .row {
+            padding: 20px;
+        }
+
+        .price img {
+            max-width: 500px;
+            width: 100%;
+        }
+
+        .price {
+            padding: 40px;
+            text-align: center;
+        }
+
+        .price .row {
+            padding: 20px;
+        }
+
+        .form-container {
+            background-color: #f2f2f2;
+            padding: 25px;
+
+        }
+
+        .form-container h1 {
+            text-align: center;
+        }
+
+
+        .form input {
+
+            width: 300px;
+            padding: 5px;
+            background-color: white;
+            border: none;
+            border-radius: 7px;
+        }
+
+        .forminside {
+            display: flex;
+            justify-content: center;
+            padding: 25px;
+        }
+
+        #btn3 {
+            margin-top: 10px;
+            background-color: #000000;
+            color: #ffffff;
+            border-radius: 5px;
+            border: none;
+            padding: 10px;
+            transition: ease 0.3s;
+
+        }
+
+        #btn3:hover {
+            background-color: rgb(52, 51, 51);
+        }
+
+
+        .foot li {
+            list-style: none;
+            margin: 3px;
+
+        }
+
+        .links {
+            border-right: .3px solid white;
+            text-align: center;
+        }
+
+        .foot a {
+            color: white;
+        }
+
+        .foot {
+            background-color: #212529;
+            padding: 30px;
+        }
+
+        .social-media {
+            color: white;
+            text-align: center;
+        }
+
+        .social-media i {
+            font-size: 25px;
+        }
+
+        .copy {
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg ">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img src="swish_sneaker_shop_logo-removebg-preview.png" alt=""
+                        id="img"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-auto gap-2">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                       
+                        <li class="nav-item">
+                            <a class="nav-link" href="#review">Reviews</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#Buy now">Buy Now</a>
+                        </li>
+                         <li class="nav-item">
+                            <a class="nav-link" href="#Features">Features</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <div class="container-fluid sec1">
+                <div class="container-fluid head">
+                    <h1>Unleash for power</h1>
+                    <p>engineered smart fashion,designed for </p>
+                    <p>presence.This is more than just a sneaker</p><br>
+                    <input type="submit" value="Shop Now" id="btn1" onclick="btn1()">
+                    <input type="submit" value="Learn More" id="btn2" onclick="btn1()">
+                </div>
+            </div>
+            <div class="container-fluid head1">
+                <h1>Unleash for power</h1>
+                <p>engineered smart fashion,designed for </p>
+                <p>presence.This is more than just a sneaker</p><br>
+                <input type="submit" value="Shop Now" id="btn1" onclick="btn1()">
+                <input type="submit" value="Learn More" id="btn2" onclick="btn1()">
+            </div>
+        </section>
+        <section>
+            <div class="container-fluid hero">
+                <div class="heading">
+                    <h1>Nike Dunk Low SE</h1>
+                    <p style="font-weight: 700;">Lace 'em up.Tear it down.</p>
+                    <p>Nike Dunk delivers next-level comfort, bold design, and all-day performance — made for movement
+                        on
+                        and off the street.</p>
+                    <input type="submit" value="Buy now" id="btn" onclick="btn()">
+                </div>
+                <div class="image">
+                    <img src="dunk-low-se-shoes-veNokWrQ-removebg-preview.png" alt="">
+                </div>
+            </div>
+        </section>
+        <section id="Features">
+            <div class="container-fluid features">
+                <h1>What Makes Us Great</h1>
+                <div class="row ">
+                    <div class="col-12 col-md-6 col-lg-3 col">
+
+                        <div class="icon">
+                            <i class="bi bi-speedometer2"></i>
+                            <h3>Ultralight Design</h3>
+                        </div>
+                        <p>Ultra design built for fast,all day movement</p>
+
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3 col">
+                        <div class="icon">
+                            <i class="bi bi-wind"></i>
+                            <h3>Breathable Mesh</h3>
+                        </div>
+                        <p>Breatheble mesh keeps your feet cool and cool</p>
+
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3 col">
+                        <div class="icon">
+                            <i class="bi bi-shield-check"></i>
+                            <h3>Durable Build</h3>
+                        </div>
+                        <p>Durable materials foe lasting performanceand protection</p>
+
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3 col">
+                        <div class="icon">
+                            <i class="bi bi-lightning-charge-fill"></i>
+                            <h3>Responisve Sole</h3>
+                        </div>
+                        <p>Responsive sole for maximum energy return.</p>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="Buy now">
+            <div class="container-fluid price">
+                <h1>Pick Your Perfect Fit</h1>
+                <div class="row g-2">
+                    <div class="col-12 col-md-4 col-lg-4">
+                        <img src="zoom-gp-challenge-1-hard-court-tennis-shoes-GkKp0d.avif" alt="">
+                        <h6>Nike Vapor 12</h6>
+                        <p>Men's court Tennis Shoes</p>
+                        <h6>MRP : $14 995.00</h6>
+                        <input type="submit" value="Buy Now" class="btn" onclick="btn()">
+                    </div>
+                    <div class="col-12 col-md-4 col-lg-4">
+                        <img src="vapor-12-hard-court-tennis-shoes-v9HS1ojo.avif" alt="">
+                        <h6>Nike Vapor 12</h6>
+                        <p>Women's court Tennis Shoes</p>
+                        <h6>MRP : $14 995.00</h6>
+                        <input type="submit" value="Buy Now" class="btn" onclick="btn()">
+                    </div>
+                    <div class="col-12 col-md-4 col-lg-4">
+                        <img src="zoom-gp-challenge-1-hard-court-tennis-shoes-72C9bR.avif" alt="">
+                        <h6>Nike zoom GP Challenge 1</h6>
+                        <p>Women's Hard Court Tennis Shoes</p>
+                        <h6>MRP : $13 995.00</h6>
+                        <input type="submit" value="Buy Now" class="btn" onclick="btn()">
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <section id="review">
+            <div class="container-fluid coustomer">
+                <h1>Loved By Sneakerheads</h1>
+                <div class="row">
+                    <div class="col-12 col-md-6 col1">
+                        <div class="review">
+                            <i class="bi bi-person-circle"></i>
+                            <p>Robert pattinson</p>
+                        </div>
+                        <p>"Stylish and super comfy!"
+                            I love how the Dunks look with every outfit. The fit is perfect, and they feel great even
+                            after
+                            wearing them all day. Definitely worth it!</p>
+                        <p>⭐⭐⭐⭐</p>
+                    </div>
+
+                    <div class="col-12 col-md-6 col1">
+                        <div class="review">
+                            <i class="bi bi-person-circle"></i>
+                            <p>Clark Kent</p>
+                        </div>
+                        <p></p> "Great grip and build quality"
+                        Been using them for a few weeks, and the quality is top-notch. Solid grip and great comfort for
+                        both walking and casual wear.</p>
+                        <p>⭐⭐⭐⭐</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container-fluid form-container">
+                <h1>Never Miss A Drop</h1>
+                <div class="forminside">
+                    <div class="form">
+                        <form action="" onsubmit="return btn3()">
+                            <label for="">Name:</label><br>
+                            <input type="text" placeholder="Enter your name" id="name"><br>
+                            <p id="nameerror" style="color:red"></p>
+
+                            <label for="">Email:</label><br>
+                            <input type="email" placeholder="Enter your email" id="mail">
+                            <p id="mailerror" style="color:red"></p>
+
+                            <input type="submit" value="Subscribe" id="btn">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container-fluid foot">
+            <div class="row">
+                <div class="col-6 col-md-6 links ">
+                    <ul>
+                        <a href="">
+                            <li></li>Home
+                        </a>
+                        <a href="">
+                            <li></li>Features
+                        </a>
+                        <a href="">
+                            <li></li>Pricing
+                        </a>
+                        <a href="">
+                            <li></li>Reviews
+                        </a>
+                        <a href="">
+                            <li></li>Subscribe
+                        </a>
+                    </ul>
+                </div>
+                <div class="col-6 col-md-6 social-media">
+                    <h5>FOLLOW US IN</h5>
+                    <div class="inisde-social">
+                        <i class="bi bi-instagram"></i>
+                        <i class="bi bi-twitter"></i>
+                        <i class="bi bi-youtube"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="copy">
+                <p>&copy; 2025 Swish Sneaker Shop. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <script>
+
+
+
+
+        function btn1() {
+            alert('Lets take the next step your Sneaker Journey starts now !')
+        }
+
+        function btn() {
+            alert('Boom ! Your pair is locked in')
+        }
+        function btn3() {
+            let name = document.getElementById('name').value;
+            let nameerror = document.getElementById('nameerror');
+            let mailerror = document.getElementById('mailerror');
+            let mail = document.getElementById('mail').value;
+            mailerror.innerHTML = ''
+            nameerror.innerHTML = ''
+            let valid = true;
+            if (name === '') {
+                nameerror.innerHTML = 'Hey buddy did u forget to enter your name';
+                valid = false
+            }
+            if (mail === '') {
+                mailerror.innerHTML = "Hey buddy did u forget to enter your email";
+                valid = false
+            }
+
+            if (valid) {
+                alert('You are in! Get readyfor exclusive updates')
+            }
+            return false
+        }
+
+
+    </script>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
